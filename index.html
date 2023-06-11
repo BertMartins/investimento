@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora de Investimento</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de Investimento</h1>
+    <form id="investment-form">
+      <label for="monthly-investment">Quanto você quer investir por mês?</label>
+      <input type="text" id="monthly-investment" required>
+
+      <label for="initial-investment">Quanto você tem para dar de entrada?</label>
+      <input type="text" id="initial-investment" required>
+
+      <label for="investment-duration">Quantos anos você deseja finalizar o investimento?</label>
+      <input type="text" id="investment-duration" required>
+
+      <button type="submit" id="calculate-button">Calcular</button>
+    </form>
+
+    <div id="results" class="hidden">
+      <table id="investment-table">
+        <thead>
+          <tr>
+            <th>Data</th>
+            <th>Investido Mensal</th>
+            <th>Total Mensal</th>
+            <th>Rendimento Mensal</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <div id="summary">
+        <p id="total-invested"></p>
+        <p id="total-earnings"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
