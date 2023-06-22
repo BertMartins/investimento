@@ -42,9 +42,9 @@ document.getElementById('investment-form').addEventListener('submit', function(e
       var celulaTotalMensal = novaLinha.insertCell();
       var totalMensal;
       if (i === 0) {
-        totalMensal = ((((investimentoMensal + entradaInicial) * 0.00041) * 30) + investimentoMensal + entradaInicial);
+        totalMensal = ((((investimentoMensal + entradaInicial) * 0.00021) * 30) + investimentoMensal + entradaInicial);
       } else {
-        totalMensal = ((((totalAnterior + investimentoMensal) * 0.00041) * 30) + totalAnterior + investimentoMensal);
+        totalMensal = ((((totalAnterior + investimentoMensal) * 0.00021) * 30) + totalAnterior + investimentoMensal);
       }
       celulaTotalMensal.textContent = formatarMoeda(totalMensal);
       totalAnterior = totalMensal;
